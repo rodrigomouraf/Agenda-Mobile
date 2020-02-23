@@ -10,13 +10,8 @@ public class AlunoDAO {
 
     private final static List<Aluno> alunos = new ArrayList<>();
 
-    public void salva(Aluno aluno) {
+    public void salva(Aluno aluno) { alunos.add(aluno); }
 
-        alunos.add(aluno);
+    public List<Aluno> todos() { return new ArrayList<>(alunos); }
 
-    }
-
-    public List<Aluno> todos() {
-        return new ArrayList<>(alunos);
-    }
 }
