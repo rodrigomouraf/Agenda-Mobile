@@ -1,4 +1,5 @@
 package br.com.alura.agenda.ui.activity;
 
-public interface ConstantesActivity {
+public interface ConstantesActivities {
+    String CHAVE_ALUNO = "aluno";
 }
