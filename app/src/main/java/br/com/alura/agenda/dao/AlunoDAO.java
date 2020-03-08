@@ -31,7 +31,7 @@ public class AlunoDAO {
              alunos) {
             if(a.getId() == aluno.getId()){
                 return a;
-            };
+            }
         }
         return null;
     }
