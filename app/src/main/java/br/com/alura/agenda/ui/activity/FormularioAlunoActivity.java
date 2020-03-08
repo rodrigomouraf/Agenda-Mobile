@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
@@ -33,7 +31,6 @@ public class FormularioAlunoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formulario_aluno);
 
         inicializacaoDosCampos();
-        //configuraBotaoSalvar();
         carregaAluno();
     }
 
@@ -70,15 +67,6 @@ public class FormularioAlunoActivity extends AppCompatActivity {
         campoEmail.setText(aluno.getEmail());
     }
 
-    private void configuraBotaoSalvar() {
-        //Button botaoSalvar = findViewById(R.id.activity_formulario_aluno_botao_salvar);
-        //botaoSalvar.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        finalizaFormulario();
-        //    }
-        //});
-    }
 
     private void finalizaFormulario() {
         preencheAluno();
