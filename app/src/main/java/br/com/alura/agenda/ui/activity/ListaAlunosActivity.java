@@ -22,7 +22,7 @@ import static br.com.alura.agenda.ui.activity.ConstantesActivities.CHAVE_ALUNO;
 public class ListaAlunosActivity extends AppCompatActivity {
 
     public static final String TITULO_APPBAR = "Lista de Alunos";
-    private final ListaAlunoView listaAlunosView = new ListaAlunoView(this);
+    private ListaAlunoView listaAlunosView;
 
 
     @Override
@@ -31,6 +31,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_alunos);
 
         setTitle(TITULO_APPBAR);
+        listaAlunosView = new ListaAlunoView(this);
         configuraFabNovoAluno();
         configuraLista();
     }
